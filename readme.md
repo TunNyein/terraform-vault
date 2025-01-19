@@ -26,10 +26,11 @@ In your terminal, navigate to the project directory and create the terraform.tfv
 
 ```
 3. Paste your Vault root token:
-Open the terraform.tfvars file and paste the Vault server root token as shown below:
+Open the terraform.tfvars file and paste the Vault server root token and Address as shown below:
 
 ```bash
-vault_server1_rtoken = "YOUR_VAULT_SERVER_ROOT_TOKEN"
+vault_server1_rtoken= "YOUR_VAULT_SERVER_ROOT_TOKEN"
+vault_server_address= "YOUR_VAULT_SERVER_ADDRESS"
 ```
 4. Run Terraform to apply the configuration:
 After saving the changes, run the following Terraform command to apply the configuration:
