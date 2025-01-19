@@ -19,12 +19,11 @@ Follow the steps below to test the Terraform configuration with your Vault serve
    cd terraform-vault
 
 2. Create a terraform.tfvars file: In your terminal, navigate to the project directory and create the terraform.tfvars file to store the Vault root token
-```bash
+  ```bash
    touch terraform.tfvars
 
 3.Paste your Vault root token: Open the terraform.tfvars file and paste the Vault server root token as shown below:
-
-```bash
+  ```bash
    dev_server1_token = "YOUR_VAULT_SERVER_ROOT_TOKEN"
 
 Run Terraform to apply the configuration: After saving the changes, run the following Terraform command to apply the configuration:
