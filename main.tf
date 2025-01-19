@@ -148,6 +148,18 @@ resource "vault_kv_secret_v2" "aws_infra_team1_secrets" {
   
 }
 
+resource "vault_kv_secret_v2" "aws_infra_devrole_secrets" {
+  mount                      = vault_mount.kvv2-infra-team1.path
+  name                       = "aws_master_devrole_team1"
+  data_json                  = jsonencode(
+  {
+    access_key       = "admin",
+    secret_acesskey  = "Passwordxeekii12"
+  }
+  )
+  
+}
+
 resource "vault_kv_secret_v2" "aws_infra_team2_secrets" {
   mount                      = vault_mount.kvv2-infra-team2.path
   name                       = "aws_master_adminrole_team2"
