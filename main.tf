@@ -192,12 +192,12 @@ path "kvv2_infra_team1/*" {
 EOT
 }
 
-# resource "vault_policy" "infra_team2_policy" {
-#   name = "infra_team2_policy"
+resource "vault_policy" "infra_team2_policy" {
+  name = "infra_team2_policy"
 
-#   policy = <<EOT
-# path "kvv2_infra_team2/*" {
-#   capabilities = ["create", "delete", "read"]
-# }
-# EOT
-# }
+  policy = <<EOT
+path "kvv2_infra_team2/*" {
+  capabilities = ["create", "delete", "read"]
+}
+EOT
+}
